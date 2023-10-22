@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <h1>Sign Up</h1>
+    <form action="/action_page.php" method="post">
+        <label for="mailid">Email ID:</label><br>
+        <input type="email" name="mailid" id="mailid" onkeyup="checkEmailValidity()"><br>
+        <p>Email Validity: <span class="email-validity" id="email-validity">Enter a Gmail address</span></p>
+        <label for="fname">First Name:</label><br>
+        <input type="text" name="fname" id="fname"><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" name="lname" id="lname"><br>
+        <label for="userid">UserID</label><br>
+        <input type="text" name="userid" id="userid"><br>
+        <label for="password">Password</label><br>
+        <input type="password" name="password" id="password" onkeyup="checkPasswordStrength()">
+        <p>Password Strength:<span class="password-strength" id="password-strength">Weak</span></p><br>
+        <input type="submit" name="submit" id="submit">
+    </form>
+    <script src="signupform.js"></script>
+</body>
+
+</html>
